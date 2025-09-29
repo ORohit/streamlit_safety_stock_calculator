@@ -16,6 +16,9 @@ def safety_stock(service_level, demand_mean, demand_std, lt_mean, lt_std):
 # -------------------------------
 # Streamlit App
 # -------------------------------
+
+st.set_page_config(page_title="Safety Stock Calculator", page_icon="o")
+
 st.title("2-Tier Inventory Flow Network: Safety Stock Calculator")
 
 st.markdown("""
@@ -169,3 +172,4 @@ ax2.set_ylabel("Frequency")
 ax2.set_title("Histogram of Store Lead Times")
 ax2.legend()
 st.pyplot(fig2)
+
